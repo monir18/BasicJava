@@ -22,7 +22,7 @@ public class Series {
         int i = 1, lastNumber, summation = 0;
         boolean f = true;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter last number = ");
+        System.out.print("Enter last number = ");
         lastNumber = scanner.nextInt();
         while (i <= lastNumber){
             if (f == false)
@@ -33,7 +33,23 @@ public class Series {
             i = i+2;
         }
         System.out.println(" = "+summation);
+
         // 1.5 + 2.5 + 3.5 + ........ +n
+        double d = 1.5, lastN, sumDoubleNumber = 0;
+        Scanner inDouble = new Scanner(System.in);
+        System.out.print("Enter last double number = ");
+        lastN = inDouble.nextDouble();
+
+        boolean b = true;
+        while (d <= lastN){
+            if (b == false)
+                System.out.print(" + ");
+            b = false;
+            System.out.print(d);
+            sumDoubleNumber = sumDoubleNumber + d;
+            d++;
+        }
+        System.out.println(" = "+sumDoubleNumber);
 
         // 1^2 + 2^2 + 3^2 + 4^2 + ....... +n^2
         System.out.println();
@@ -44,12 +60,12 @@ public class Series {
         boolean bool = true;
         for (int a = 1; a <= lastNum; a++){
             if (bool == false)
-                System.out.println(a+"X"+a+" ");
+                System.out.print(" + ");
             bool = false;
-            System.out.print(a);
+            System.out.print(a+"X"+a);
             summ = summ + a*a;
 
         }
-        System.out.println(summ);
+        System.out.println(" = "+summ);
     }
 }
