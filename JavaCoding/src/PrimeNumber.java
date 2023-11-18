@@ -9,7 +9,7 @@ public class PrimeNumber {
         if (primeNumber == 0 || primeNumber == 1)
             System.out.println("Not Prime Number");
         else {
-            for (int i = 2; i < primeNumber / 2; i++){
+            for (int i = 2; i < primeNumber; i++){
                 if (primeNumber % i == 0){
                     count++;
                     break;
