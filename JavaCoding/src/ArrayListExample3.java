@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ArrayList3 {
+public class ArrayListExample3 {
     public static void main(String[] args) {
         ArrayList<Integer> number1 = new ArrayList<>();
         ArrayList<Integer> number2 = new ArrayList<>();
