@@ -4,7 +4,7 @@ public class OOPTest {
         JavaClassExample teacher;//object declare
         teacher = new JavaClassExample();//object create
         */
-        
+
         /*
         JavaClassExample teacher = new JavaClassExample();
         teacher.name = "Moniruzzaman";
